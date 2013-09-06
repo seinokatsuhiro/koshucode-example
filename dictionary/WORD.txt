@@ -1,0 +1,654 @@
+Heading words in C. J. Date's relational database dictionary.
+
+Legend
+
+  *  Example codes in this directory
+  .  No example codes
+  $  Unknown
+
+Highlight on Emacs
+
+  hi-lock: (("^[*].*" (0 'font-lock-keyword-face t)))
+  hi-lock: (("^[.].*" (0 'font-lock-comment-face t)))
+
+----------------------------------------------------------------------
+
+. 0-adic
+. 0-tuple
+. 1NF
+. 2NF
+. 2VL
+. 3NF
+. 3VL
+. 4NF
+. 5NF
+. 6NF
+
+. A
+. ad hoc polymorphism
+$ aggregate operator
+. ALGEBRA
+. algebra
+. alias
+. ALL BUT
+. ALPHA
+. alternate key
+. AND
+$ appearance
+. argument
+$ arity
+. Armstrong's inference rules
+. arrow
+. assignment
+. Assignment Principle, The
+* associative
+$ associative addressing
+. atomic predicate
+. atomic proposition
+. atomic statement
+. atomic value
+$ attribute
+$ attribute constraint
+$ attribute extractor
+$ attribute FROM
+. attribute renaming
+. attribute type
+. attribute value
+. augmentation
+$ axiom
+
+. bag
+* base relation
+* base relvar
+. base table
+. BCNF
+. BI-IMPLIES
+$ bijection
+. binary
+$ body
+$ BOOLEAN
+$ boolean expression
+$ boolean value
+. bound variable
+$ Boyce/Codd normal form
+. business rule
+
+. calculus
+. candidate key
+. canonical form
+* cardinality
+* cartesian product
+$ catalog
+. closed WFF
+. Closed World Assumption, The
+. closure
+. closure, transitive
+. CNF
+. Codd, E. F.
+. Codd's reduction algorithm
+. codomain.
+. coercion
+. column
+* commutative
+$ comparison
+. complement
+. complement (set theory)
+. completeness
+. component
+. composite attribute
+$ composition
+. compound predicate
+. compound proposition
+. compound statement
+$ conditional expression
+$ conjunct
+$ conjunction
+$ conjunctive normal form
+$ connective
+$ consistency
+$ consistent
+$ constraint
+$ contradiction
+$ controlled redundancy
+$ correct
+$ correctness
+$ correlation name
+$ cover
+$ cross join / cross product
+$ CWA
+
+. D_UNION
+$ data definition operator
+. data independence
+$ data manipulation operator
+$ data model
+. data sublanguage
+. Data Sublanguage ALPHA
+. data type
+. database
+$ database constraint
+. database design
+. database management system
+. database programming language
+$ database value
+$ database variable
+. DBMS
+$ dbvar
+. DCO
+$ De Morgan's Laws
+. decidability
+$ declared type
+. decomposition
+. DEE
+. deferred checking
+. deferred constraint
+$ degree
+* DELETE
+. DELETE rule
+$ denormalization
+. dependency
+. dependency theory
+. dependent
+. dereferencing
+$ derived relation
+$ derived relvar
+. determinant
+$ difference
+$ difference (set theory)
+. direct image
+. directed relationship
+$ disjoint
+$ disjoint union
+$ disjunct
+$ disjunction
+. disjunctive normal form
+$ distributive
+. DIVIDEBY
+$ division
+. DK/NF
+. DNF
+. domain
+$ domain calculus
+. domain check override
+. domain-key normal form
+. domain relational calculus
+$ dot qualification
+. double arrow
+$ double underlining
+. DRC
+$ dual mode principle
+. DUM
+$ duplicate
+. duplicate elimination
+. dyadic
+
+. E/R
+. E/R diagram
+. E/R model
+. E/R modeling
+. element
+* empty
+. empty foreign key
+* empty heading
+. empty key
+$ empty relation
+$ empty relvar
+$ empty restriction
+$ empty set
+$ empty tuple
+$ empty type
+$ encapsulated
+. entity
+. entity integrity
+. entity/relationship diagram
+. entity/relationship model
+. entity/relationship modeling
+$ equality
+$ equijoin
+$ EQUIV
+$ equivalence
+. essentiality
+$ EXCEPT
+$ exclusive OR
+$ existential quantifier
+$ EXISTS
+. expanded cartesian product
+$ expressible relation
+$ expression
+$ expression transformation
+. EXTEND
+. extended cartesian product
+. Extensible Markup Language
+* extension
+. external predicate
+
+$ FALSE
+. FD
+. FD implied by a superkey
+$ FD preservation
+$ fifth normal form
+$ first normal form
+. first order logic
+. flat relation
+. FORALL
+$ foreign key
+. foreign key constraint
+. foreign key rule
+. formal system
+. formula
+$ fourth normal form
+$ free variable
+. full FD
+. fully dependent
+. fully normalized
+$ function
+$ functional dependency
+. functionally dependent
+. functionally determines
+
+. generated type
+. Golden Rule, The
+$ greater-than join
+. GROUP
+$ grouping
+
+. hash
+$ heading
+$ Heath's theorem
+. host language
+
+$ idempotent
+$ identity
+* identity projection
+* identity restriction
+. identity value
+$ IF ... THEN ...
+$ IF AND ONLY IF
+$ IFF
+. image
+. immediate checking
+. immediate constraint
+. implementation
+$ implication
+. implied by FDs
+. implied by superkey(s)
+. IMPLIES
+. inclusion
+. inclusion dependency
+. IND
+. independent projection
+. index
+. inference rule
+. information equivalent
+. Information Principle, The
+. inheritance
+. injection
+. inner join
+$ INSERT
+. instantiation
+. integrity
+. integrity constraint
+. intelligent key
+. intended interpretation
+. intension
+. Interchangeability Principle, The
+. internal predicate
+. INTERSECT
+* intersection
+. intersection (set theory)
+. irreducible
+$ irreducibly dependent
+. irreducibly equivalent
+$ IS_EMPTY
+$ isomorphism
+
+. JD
+. JD implied by superkeys
+. JOIN
+. join
+$ join dependency
+
+. key
+. key constraint
+
+$ left-irreducible FD
+. less-than join
+* literal
+. logic
+. logic variable
+. logical data independence
+. logical database design
+. logical expression
+. logical implication
+. logical operator
+. logical system
+. lossless decomposition
+* lossy decomposition
+
+$ many-to-many correspondence
+$ many-to-one correspondence
+. mapping
+. mark
+. MATCHING
+. material implication
+$ materialization
+$ materialized view
+$ meaning
+$ member
+$ merge
+$ metadata
+$ minimality
+$ MINUS
+$ missing information
+$ model
+$ monadic
+$ multi-relvar constraint
+$ multidependent
+$ multidetermines
+$ multiple assignment
+$ multiset
+$ multivalued dependency
+. mutator
+. MVD
+. MVD implied by a superkey
+
+. n-adic
+. n-ary
+. n-place
+. n-tuple
+$ NAND
+* natural join
+* negation
+. nested relation
+$ NF2
+$ niladic
+$ nonloss decomposition
+$ nonscalar
+$ nontrivial
+$ NOR
+$ normal form
+$ normalization
+$ normalized relvar
+$ NOT
+$ NOT MATCHING
+$ null
+$ nullary
+$ nullary foreign key
+$ nullary heading
+$ nullary key
+$ nullary projection
+$ nullary relation
+$ nullary tuple
+$ nullology
+
+. object
+. object ID
+. object oriented / object orientation
+. object/relational database
+. object/relational DBMS
+. observer
+$ one-to-many correspondence
+$ one-to-one correspondence
+. OO
+. open WFF
+. Open World Assumption, The
+$ operation
+$ operator
+$ optimizer
+$ OR
+$ ordering
+$ ordinal type
+$ orthogonal
+$ orthogonal decomposition
+$ Orthogonal Design Principle, The
+$ overloading
+$ OWA
+
+. parameter
+. Peirce arrow
+. persistence
+. physical data independence
+. physical database design
+. PJ/NF
+. placeholder
+. pointer
+. polymorphism
+$ power set
+$ predicate
+. predicate calculus
+. predicate logic
+. prenex normal form
+$ primary key
+$ primitive operator
+$ Principle of Identity of Indiscernibles, The
+. Principle of Interchangeability, The
+. Principle of Orthogonal Design, The
+$ product
+* projection
+. projection-join normal form
+$ proper inclusion
+$ proper subset
+$ proper superkey
+$ proper superset
+. property
+$ proposition
+. propositional calculus
+. propositional logic
+$ pseudovariable reference
+
+. QBE
+. quantifier
+. QUEL
+. query
+. query rewrite
+* quota query
+
+. range
+. range variable
+. RANK
+* ranking
+. read-only operator
+. real relvar
+$ recursive query
+. redundancy
+. referenced relvar
+. referencing
+. referencing relvar
+. referential action
+. referential constraint
+. referential integrity
+$ reflexive
+. refresh
+. relation
+. relation assignment
+. relation comparison
+$ relation constant
+$ relation equality
+. relation expression
+$ relation predicate
+$ relation type
+. relation type generator
+. relation type inference
+$ relation value
+* relation-valued attribute
+. relation variable
+. relational algebra
+. relational assignment
+. relational calculus
+* relational comparison
+. relational completeness
+. relational database
+. relational DBMS
+. relational expression
+. relational model
+. relational operator
+. relationship
+. relcon
+. relvar
+$ relvar constraint
+$ relvar predicate
+* renaming
+* repeating group
+* restriction
+. reversible decomposition
+. RM/T
+. RM/V1
+. RM/V2
+. row
+. row ID
+. RVA
+
+. scalar
+$ second normal form
+. second order logic
+. selection
+$ selector
+. self-referencing relvar
+$ semantic optimization
+* semidifference
+. SEMIJOIN
+* semijoin
+. SEMIMINUS
+. sentence
+. SEQUEL
+* set
+. set function
+* set inclusion
+. set level
+* set membership
+. set theory
+. Sheffer stroke
+. simple attribute
+. simple predicate
+. simple proposition
+$ single-relvar constraint
+* sixth normal form
+. snapshot
+. sort/merge
+. soundness
+. SQL
+. star join
+. state constraint
+. statement
+* subexpression
+* subquery
+. subject to update
+* subset
+$ substitution
+$ subtables and supertables
+$ subtuple
+$ subtype
+* summarization
+. SUMMARIZE
+$ summary
+$ superkey
+$ superset
+$ supertype
+$ surjection
+$ surrogate key
+* symmetric
+$ symmetric difference (set theory)
+
+. table
+. table alias
+. tables and views / tables or views
+* TABLE_DEE and TABLE_DUM
+$ tautology
+. TCLOSE
+. temporal database
+. theorem
+* theta join
+$ third normal form
+$ three-valued logic
+. time-varying relation
+. TIMES
+. total database constraint
+. total relvar constraint
+. transaction
+. transition constraint
+$ transitive
+$ transitive closure
+$ transitive FD
+$ TransRelational Model
+$ TRC
+$ triggered procedure
+$ trivial FD
+$ trivial JD
+$ trivial MVD
+$ TRUE
+$ truth value
+$ truth-valued expression
+$ tuple
+$ tuple assignment
+$ tuple calculus
+$ tuple comparison
+$ tuple component
+$ tuple composition
+$ tuple difference
+$ tuple equality
+$ tuple expression
+$ tuple extension
+$ tuple extractor
+$ TUPLE FROM
+$ tuple ID
+$ tuple intersection
+$ tuple join
+$ tuple level
+$ tuple projection
+$ tuple relational calculus
+$ tuple renaming
+$ tuple type
+$ tuple type generator
+$ tuple type inference
+$ tuple union
+$ tuple unwrapping
+$ tuple value
+$ tuple variable
+$ tuple wrapping
+$ tuplevar
+$ two-valued logic
+$ type
+$ type constraint
+$ type error
+$ type generator
+$ type inheritance
+
+. unary
+. UNGROUP
+* ungrouping
+. UNION
+* union
+. union compatibility
+. union (set theory)
+. unique index
+$ universal quantifier
+. universal relation
+. universal relvar
+. UNWRAP
+$ unwrapping
+$ UPDATE
+. UPDATE rule
+. update
+. update anomaly
+. update operator
+. update propagation
+. user
+
+$ value
+. VAR
+. variable
+. variable reference
+* view
+. view updating
+. virtual relvar
+
+. well-formed formula
+. WFF
+$ what if
+* WITH
+. WRAP
+$ wrapping
+
+. XML
+. XOR
+
