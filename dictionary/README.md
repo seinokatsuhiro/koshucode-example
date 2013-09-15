@@ -32,13 +32,13 @@ Run `koshu` command to calculate [`natural-join.k`][natural-join.k]
 for dataset [`DATA.k`][DATA.k].
 
 ``` sh
-koshu natural-join.k DATA.k
+koshu calc/natural-join.k DATA.k
 ```
 
 You can change the order of files.
 
 ``` sh
-koshu DATA.k natural-join.k
+koshu DATA.k calc/natural-join.k
 ```
 
 Run all examples.
@@ -48,9 +48,9 @@ koshu --calc CALC.k
 ```
 
 
-[SP.d]: SP.d
-[CALC.k]: CALC.k
-[DATA.k]: DATA.k
+[SP.d]:     SP.d
+[CALC.k]:   CALC.k
+[DATA.k]:   DATA.k
 [WORD.txt]: WORD.txt
-[natural-join.k]: natural-join.k
+[natural-join.k]: calc/natural-join.k
 
