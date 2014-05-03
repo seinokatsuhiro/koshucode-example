@@ -7,3 +7,4 @@ Results of regression tests are recorded in OK or DIFF.
 This summary is produced by the command `koshu-inout-summary.sh`.
 
 * OK – [INOUT.md](calc/A/INOUT.md) in calc / A
+* OK – [INOUT.md](calc/B/INOUT.md) in calc / B

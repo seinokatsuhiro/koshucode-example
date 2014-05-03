@@ -1,6 +1,6 @@
 # I/O List
 
-- [../../dict.sh](#//dictsh)
+- [../../dict.sh](#dictsh)
 - ../../dict.sh [associative.k](#associativek)
 
 
