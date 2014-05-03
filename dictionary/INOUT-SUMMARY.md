@@ -14,3 +14,4 @@ This summary is produced by the command `koshu-inout-summary.sh`.
 * OK – [INOUT.md](calc/I/INOUT.md) in calc / I
 * OK – [INOUT.md](calc/L/INOUT.md) in calc / L
 * OK – [INOUT.md](calc/N/INOUT.md) in calc / N
+* OK – [INOUT.md](calc/P/INOUT.md) in calc / P
