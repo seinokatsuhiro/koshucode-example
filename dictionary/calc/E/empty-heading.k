@@ -1,0 +1,4 @@
+** -*- koshu -*-
+
+|== EMPTY-HEADING : dee
+

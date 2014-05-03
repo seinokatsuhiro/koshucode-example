@@ -1,4 +1,0 @@
-** -*- koshu -*-
-
-|== EMPTY-HEADING : reldee
-
