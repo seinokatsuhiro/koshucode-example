@@ -7,4 +7,3 @@ sp   : source SP /sno /pno /qty
 |== CS  : s  | size /card
 |== CP  : p  | size /card
 |== CSP : sp | size /card
-
