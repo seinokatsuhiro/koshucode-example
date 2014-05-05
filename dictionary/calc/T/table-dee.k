@@ -1,10 +1,10 @@
 ** -*- koshu -*-
 
 s    : source S /sno /sname /status /city
-sj   : s | join reldum
-sm   : s | meet reldum
+sj   : s | join dee
+sm   : s | meet dee
 
-|== DUM : reldum
+|== DEE : dee
 |== SJ  : sj
 |== SM  : sm
 
