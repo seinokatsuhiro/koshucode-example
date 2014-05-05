@@ -20,3 +20,4 @@ This summary is produced by the command `koshu-inout-summary.sh`.
 * OK – [INOUT.md](calc/S/INOUT.md) in calc / S
 * OK – [INOUT.md](calc/T/INOUT.md) in calc / T
 * OK – [INOUT.md](calc/U/INOUT.md) in calc / U
+* OK – [INOUT.md](calc/V/INOUT.md) in calc / V
