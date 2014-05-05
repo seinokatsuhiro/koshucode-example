@@ -1,13 +1,13 @@
 ** -*- koshu -*-
 
-** **********************  classical set union
+**  classical set union
 
 s-city : source S /city
 p-city : source P /city
 
 |== CITY1 : s-city | join p-city
 
-** **********************  relational lattice operator
+**  join of relational lattice
 
 s      : source S /sno /sname /status /city
 p      : source P /pno /pname /color /weight /city
