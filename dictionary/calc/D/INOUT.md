@@ -22,7 +22,7 @@ koshu $dict_dir/DATA.k $*
 
 |=X S
   | source S /sno /city
-  | hold /city = 'Athens
+  | keep /city = 'Athens
 ```
 
 Command `../../dict.sh delete.k` produces:

@@ -72,8 +72,8 @@ Command `../../dict.sh identity-projection.k` produces:
 
 s : source S /sno /sname /status /city
 
-|== S2 : s | hold /status <> 25
-|== S3 : s | hold /status = /status
+|== S2 : s | omit /status = 25
+|== S3 : s | keep /status = /status
 
 ```
 

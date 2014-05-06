@@ -120,7 +120,7 @@ s    : source S  /city | rename /sc /city
 p    : source P  /city | rename /pc /city
 
 sp   : s | meet p
-         | hold /sc > /pc
+         | keep /sc > /pc
 
 |== S  : s
 |== P  : p
