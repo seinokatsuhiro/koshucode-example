@@ -88,11 +88,11 @@ Command `../../dict.sh negation.k` produces:
 **    negation.k
 **
 
-|-- S  /sno 'S1  /city 'London  /negation #false  /criteria #true
-|-- S  /sno 'S2  /city 'Paris  /negation #true  /criteria #false
-|-- S  /sno 'S3  /city 'Paris  /negation #true  /criteria #false
-|-- S  /sno 'S4  /city 'London  /negation #false  /criteria #true
-|-- S  /sno 'S5  /city 'Athens  /negation #true  /criteria #false
+|-- S  /sno 'S1  /city 'London  /negation <0>  /criteria <1>
+|-- S  /sno 'S2  /city 'Paris  /negation <1>  /criteria <0>
+|-- S  /sno 'S3  /city 'Paris  /negation <1>  /criteria <0>
+|-- S  /sno 'S4  /city 'London  /negation <0>  /criteria <1>
+|-- S  /sno 'S5  /city 'Athens  /negation <1>  /criteria <0>
 
 *** 5 judges
 

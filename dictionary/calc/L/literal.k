@@ -5,10 +5,10 @@
 
 |-- CHAR      /lit 'ABC
 |-- CHAR      /lit "ABC DEF"
-|-- CHAR      /lit #qq "I am double quoted." #qq
+|-- CHAR      /lit <qq> "I am double quoted." <qq>
 
-|-- BOOLEAN   /lit #true
-|-- BOOLEAN   /lit #false
+|-- BOOLEAN   /lit <1>
+|-- BOOLEAN   /lit <0>
 
 |-- SET       /lit { }
 |-- SET       /lit { 'ABC }

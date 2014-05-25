@@ -7,8 +7,8 @@
 **    koshu logic.k
 **
 
-|-- BOOLEAN  /x #true
-|-- BOOLEAN  /x #false
+|-- BOOLEAN  /x <1>
+|-- BOOLEAN  /x <0>
 
 bool : source BOOLEAN /x
 
@@ -26,9 +26,9 @@ c : a | meet b
 
 |== E
   | add ** /and0 ( and )
-        /and1 ( and #true )
-        /and2 ( and #true #true )
-        /and3 ( and #true #true #true )
+        /and1 ( and <1> )
+        /and2 ( and <1> <1> )
+        /and3 ( and <1> <1> <1> )
 
 |== G
   | bool

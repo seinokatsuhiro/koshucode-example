@@ -17,10 +17,10 @@
 
 ** hash text
 
-|-- HASH  /x "abc" #sp "def"
-|-- HASH  /x "abc" #cr #lf "def"
+|-- HASH  /x "abc" <sp> "def"
+|-- HASH  /x "abc" <cr> <lf> "def"
 |-- HASH  /x "abc'def"
-|-- HASH  /x "abc" #qq "def"
+|-- HASH  /x "abc" <qq> "def"
 |-- HASH  /x "abc	def"    ** tab
 |-- HASH  /x "abc#def"
 |-- HASH  /x ""
