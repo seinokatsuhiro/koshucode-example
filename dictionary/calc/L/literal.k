@@ -20,10 +20,10 @@
 |-- LIST      /lit [ 'ABC : 'DEF : () : () ]
 |-- LIST      /lit [ 'ABC : 'DEF : [ 'G : 'HI ]]
 
-|-- TERMSET   /lit <| /sno 'S1  /pno 'P1  /qty 300 |>
-|-- TERMSET   /lit <| /sno 'S1  /pno 'P2  /qty 200 |>
-|-- TERMSET   /lit <| /sno 'S1 |>
-|-- TERMSET   /lit <| |>
+|-- TERMSET   /lit << /sno 'S1  /pno 'P1  /qty 300 >>
+|-- TERMSET   /lit << /sno 'S1  /pno 'P2  /qty 200 >>
+|-- TERMSET   /lit << /sno 'S1 >>
+|-- TERMSET   /lit << >>
 
 |-- RELATION  /lit {| /sno : /pno : /qty
                     | 'S1  : 'P1  : 300
