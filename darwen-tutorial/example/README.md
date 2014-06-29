@@ -390,8 +390,8 @@ Command `koshu DATA.k VIOLATE.k duplicate-1.k` exits with 1 and produces:
 **    duplicate-1.k
 **
 
-|-- DUPLICATE  /student-id 'S1  /name1 'Anne  /name2 'Eva
-|-- DUPLICATE  /student-id 'S1  /name1 'Eva  /name2 'Anne
+|-V DUPLICATE  /student-id 'S1  /name1 'Anne  /name2 'Eva
+|-V DUPLICATE  /student-id 'S1  /name1 'Eva  /name2 'Anne
 
 *** 2 judges
 
@@ -493,8 +493,8 @@ Command `koshu DATA.k VIOLATE.k duplicate-2.k` exits with 1 and produces:
 **    duplicate-2.k
 **
 
-|-- DUPLICATE  /student-id 'S1  /name 'Eva
-|-- DUPLICATE  /student-id 'S1  /name 'Anne
+|-V DUPLICATE  /student-id 'S1  /name 'Eva
+|-V DUPLICATE  /student-id 'S1  /name 'Anne
 
 *** 2 judges
 
@@ -598,7 +598,7 @@ Command `koshu DATA.k VIOLATE.k exclusion.k` exits with 1 and produces:
 **    exclusion.k
 **
 
-|-- EXCLUDE  /student-id 'S6
+|-V EXCLUDE  /student-id 'S6
 
 *** 1 judge 
 
