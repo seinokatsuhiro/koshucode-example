@@ -150,8 +150,8 @@ Command `../../dict.sh theta-join.k` produces:
 
 *** 3 judges
 
-|-- SP  /pc 'Oslo  /sc 'Paris
 |-- SP  /pc 'London  /sc 'Paris
+|-- SP  /pc 'Oslo  /sc 'Paris
 
 *** 2 judges
 
