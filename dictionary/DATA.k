@@ -14,7 +14,10 @@
 **    $ ./DATA.k natural-join.k
 **
 
-**  Supplier
+**  INTERPRETATION of S
+**    <<< Supplier /sno named /sname is under contract.
+**        The supplier has status value /status,
+**        and is located in the /city. >>>
 
 |-- S  /sno 'S1  /sname 'Smith  /status 20  /city 'London
 |-- S  /sno 'S2  /sname 'Jones  /status 10  /city 'Paris
@@ -22,7 +25,10 @@
 |-- S  /sno 'S4  /sname 'Clark  /status 20  /city 'London
 |-- S  /sno 'S5  /sname 'Adams  /status 30  /city 'Athens
 
-**  Part
+**  INTERPRETATION of P
+**    <<< Parts /pno named /pname are managed.
+**        Its color is /color, weight is /weight,
+**        and the parts are kept in the /city. >>>
 
 |-- P  /pno 'P1  /pname 'Nut   /color 'Red   /weight 12  /city 'London
 |-- P  /pno 'P2  /pname 'Bolt  /color 'Green /weight 17  /city 'Paris
@@ -31,7 +37,9 @@
 |-- P  /pno 'P5  /pname 'Cam   /color 'Blue  /weight 12  /city 'Paris
 |-- P  /pno 'P6  /pname 'Cog   /color 'Red   /weight 19  /city 'London
 
-**  Shipment
+**  INTERPRETATION of SP
+**    <<< Supplier /sno ships parts /pno
+**        in the amount of /qty. >>>
 
 |-- SP  /sno 'S1  /pno 'P1  /qty 300
 |-- SP  /sno 'S1  /pno 'P2  /qty 200
