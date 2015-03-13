@@ -13,21 +13,20 @@ call : source IS-CALLED /student-id /name
 enl  : source IS-ENROLLED-ON /student-id /course-id
 
 **  Figure 7
-|== RESTRICTION :
-    call | keep sub-index /name 0 1 = "B"
+|== RESTRICTION : call | keep sub-index /name 0 1 = "B"
 
 **  Figure 8
-|== EXTENSION -fore /student-id /name :
-    call | add /init ( sub-index /name 0 1 )
+|== EXTENSION : call | add /init ( sub-index /name 0 1 )
+  --fore /student-id /name
 
 **  Figure 9
-|== SUMMARIZATION -fore /student-id :
-    call | pick /student-id
-         | group /g enl
-         | add /courses ( length /g/course-id )
-         | cut /g
+|== SUMMARIZATION
+  : call
+  | pick /student-id
+  | group /g enl
+  | add /courses ( length /g/course-id )
+  | cut /g
+  --fore /student-id
 
 **  Figure 10
-|== RENAME :
-    call | rename /name1 /name
-
+|== RENAME : call | rename /name1 /name

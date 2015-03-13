@@ -11,6 +11,7 @@
            | 'A5 : 20
            |}
 
-|== A -table
+|== A
   | source A /r
   | add /size ( length /r )
+  --table

@@ -144,12 +144,10 @@ call : source IS-CALLED /student-id /name
 enl  : source IS-ENROLLED-ON /student-id /course-id
 
 **  Figure 4
-|== JOIN -fore /student-id :
-    call | meet enl
+|== JOIN : call | meet enl  --fore /student-id
 
 **  Figure 5
-|== ANTIJOIN :
-    call | none ( meet enl )
+|== ANTIJOIN : call | none ( meet enl )
 
 **  Figure 6
 
@@ -159,9 +157,7 @@ enl  : source IS-ENROLLED-ON /student-id /course-id
 r1 : source NAME   /name      | meet call
 r2 : source COURSE /course-id | meet enl
 
-|== UNION -order :
-    r1 | join r2
-
+|== UNION : r1 | join r2  --order
 ```
 
 Command `koshu DATA.k composition.k` produces:
@@ -222,24 +218,23 @@ call : source IS-CALLED /student-id /name
 enl  : source IS-ENROLLED-ON /student-id /course-id
 
 **  Figure 7
-|== RESTRICTION :
-    call | keep sub-index /name 0 1 = "B"
+|== RESTRICTION : call | keep sub-index /name 0 1 = "B"
 
 **  Figure 8
-|== EXTENSION -fore /student-id /name :
-    call | add /init ( sub-index /name 0 1 )
+|== EXTENSION : call | add /init ( sub-index /name 0 1 )
+  --fore /student-id /name
 
 **  Figure 9
-|== SUMMARIZATION -fore /student-id :
-    call | pick /student-id
-         | group /g enl
-         | add /courses ( length /g/course-id )
-         | cut /g
+|== SUMMARIZATION
+  : call
+  | pick /student-id
+  | group /g enl
+  | add /courses ( length /g/course-id )
+  | cut /g
+  --fore /student-id
 
 **  Figure 10
-|== RENAME :
-    call | rename /name1 /name
-
+|== RENAME : call | rename /name1 /name
 ```
 
 Command `koshu DATA.k additional.k` produces:
@@ -314,8 +309,8 @@ call-1 : call | rename /name1 /name
 call-2 : call | rename /name2 /name
 
 ** |=V checks relation is empty.
-|=V DUPLICATE -fore /student-id /name1 :
-    call-1 | meet call-2 | keep /name1 <> /name2
+|=V DUPLICATE : call-1 | meet call-2 | keep /name1 <> /name2
+  --fore /student-id /name1
 
 ```
 
@@ -374,8 +369,8 @@ call-1 : call | rename /name1 /name
 call-2 : call | rename /name2 /name
 
 ** |=V checks relation is empty.
-|=V DUPLICATE -fore /student-id /name1 :
-    call-1 | meet call-2 | keep /name1 <> /name2
+|=V DUPLICATE : call-1 | meet call-2 | keep /name1 <> /name2
+  --fore /student-id /name1
 
 ```
 
@@ -421,8 +416,8 @@ Command `koshu DATA.k VIOLATE.k duplicate-1.k` exits with 1 and produces:
 call : source IS-CALLED /student-id /name
 
 **  Figure 11 (simplified)
-|=V DUPLICATE -fore /student-id /name :
-    call | duplicate /student-id
+|=V DUPLICATE : call | duplicate /student-id
+  --fore /student-id /name
 
 ```
 
@@ -477,8 +472,8 @@ Command `koshu DATA.k duplicate-2.k` produces:
 call : source IS-CALLED /student-id /name
 
 **  Figure 11 (simplified)
-|=V DUPLICATE -fore /student-id /name :
-    call | duplicate /student-id
+|=V DUPLICATE : call | duplicate /student-id
+  --fore /student-id /name
 
 ```
 

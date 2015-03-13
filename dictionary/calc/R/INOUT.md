@@ -34,9 +34,10 @@ koshu $dict_dir/DATA.k $*
            | 'A5 : 20
            |}
 
-|== A -table
+|== A
   | source A /r
   | add /size ( length /r )
+  --table
 ```
 
 Command `../../dict.sh relation-valued-attribute.k` produces:

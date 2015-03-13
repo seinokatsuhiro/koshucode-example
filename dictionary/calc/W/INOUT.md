@@ -46,8 +46,8 @@ same-parts
 
 |== SUPPLY-SAME-PARTS : spxy
 
-|== PARTS-CONTENTS -table -fore /sx /sy :
-    txy | meet same-parts
+|== PARTS-CONTENTS : txy | meet same-parts
+  --table --fore /sx /sy
 
 ```
 
