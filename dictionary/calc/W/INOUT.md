@@ -47,7 +47,7 @@ same-parts
 |== SUPPLY-SAME-PARTS : spxy
 
 |== PARTS-CONTENTS : txy | meet same-parts
-  --table --fore /sx /sy
+  --table --forward /sx /sy
 
 ```
 
@@ -83,48 +83,52 @@ Command `../../dict.sh with.k` produces:
 
 *** 7 judges
 
-**  TABLE : PARTS-CONTENTS
-**
-**    /sx   /sy   /spy  /spx
-**    ----- ----- ----- -----
-**    'S1   'S1   /pno  /pno
-**                ----- -----
-**                'P6   'P6
-**                'P5   'P5
-**                'P4   'P4
-**                'P3   'P3
-**                'P2   'P2
-**                'P1   'P1
-**                      
-**    'S2   'S2   /pno  /pno
-**                ----- -----
-**                'P2   'P2
-**                'P1   'P1
-**                      
-**    'S2   'S3   /pno  /pno
-**                ----- -----
-**                'P1   'P2
-**                'P2   'P1
-**                      
-**    'S3   'S2   /pno  /pno
-**                ----- -----
-**                'P2   'P1
-**                'P1   'P2
-**                      
-**    'S3   'S3   /pno  /pno
-**                ----- -----
-**                'P1   'P1
-**                'P2   'P2
-**                      
-**    'S4   'S4   /pno  /pno
-**                ----- -----
-**                'P5   'P5
-**                'P4   'P4
-**                'P2   'P2
-**                      
-**    'S5   'S5   /pno  /pno
-**                ----  ----
-**                      
+=== note
+
+TABLE : PARTS-CONTENTS
+
+  /sx   /sy   /spy  /spx
+  ----- ----- ----- -----
+  'S1   'S1   /pno  /pno
+              ----- -----
+              'P6   'P6
+              'P5   'P5
+              'P4   'P4
+              'P3   'P3
+              'P2   'P2
+              'P1   'P1
+                    
+  'S2   'S2   /pno  /pno
+              ----- -----
+              'P2   'P2
+              'P1   'P1
+                    
+  'S2   'S3   /pno  /pno
+              ----- -----
+              'P1   'P2
+              'P2   'P1
+                    
+  'S3   'S2   /pno  /pno
+              ----- -----
+              'P2   'P1
+              'P1   'P2
+                    
+  'S3   'S3   /pno  /pno
+              ----- -----
+              'P1   'P1
+              'P2   'P2
+                    
+  'S4   'S4   /pno  /pno
+              ----- -----
+              'P5   'P5
+              'P4   'P4
+              'P2   'P2
+                    
+  'S5   'S5   /pno  /pno
+              ----  ----
+                    
+
+=== rel
 
 **
 **  SUMMARY

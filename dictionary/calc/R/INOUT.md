@@ -55,21 +55,25 @@ Command `../../dict.sh relation-valued-attribute.k` produces:
 
 *** 2 judges
 
-**  TABLE : A
-**
-**    /size /r
-**    ----- ------
-**    3     /a /b
-**          -- --
-**          'A1 10
-**          'A2 20
-**          'A3 30
-**          
-**    2     /a /b
-**          -- --
-**          'A4 10
-**          'A5 20
-**          
+=== note
+
+TABLE : A
+
+  /size /r
+  ----- ------
+  3     /a /b
+        -- --
+        'A1 10
+        'A2 20
+        'A3 30
+        
+  2     /a /b
+        -- --
+        'A4 10
+        'A5 20
+        
+
+=== rel
 
 **
 **  SUMMARY
