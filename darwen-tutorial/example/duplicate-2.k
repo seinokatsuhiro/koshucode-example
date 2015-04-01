@@ -13,5 +13,5 @@ call : source IS-CALLED /student-id /name
 
 **  Figure 11 (simplified)
 |=V DUPLICATE : call | duplicate /student-id
-  --fore /student-id /name
+  --forward /student-id /name
 

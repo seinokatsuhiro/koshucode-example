@@ -13,7 +13,7 @@ call : source IS-CALLED /student-id /name
 enl  : source IS-ENROLLED-ON /student-id /course-id
 
 **  Figure 4
-|== JOIN : call | meet enl  --fore /student-id
+|== JOIN : call | meet enl  --forward /student-id
 
 **  Figure 5
 |== ANTIJOIN : call | none ( meet enl )

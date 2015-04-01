@@ -27,5 +27,5 @@ same-parts
 |== SUPPLY-SAME-PARTS : spxy
 
 |== PARTS-CONTENTS : txy | meet same-parts
-  --table --fore /sx /sy
+  --table --forward /sx /sy
 

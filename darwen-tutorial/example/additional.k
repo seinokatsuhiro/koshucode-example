@@ -17,7 +17,7 @@ enl  : source IS-ENROLLED-ON /student-id /course-id
 
 **  Figure 8
 |== EXTENSION : call | add /init ( sub-index /name 0 1 )
-  --fore /student-id /name
+  --forward /student-id /name
 
 **  Figure 9
 |== SUMMARIZATION
@@ -26,7 +26,7 @@ enl  : source IS-ENROLLED-ON /student-id /course-id
   | group /g enl
   | add /courses ( length /g/course-id )
   | cut /g
-  --fore /student-id
+  --forward /student-id
 
 **  Figure 10
 |== RENAME : call | rename /name1 /name

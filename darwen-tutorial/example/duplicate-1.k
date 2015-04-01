@@ -17,5 +17,5 @@ call-2 : call | rename /name2 /name
 
 ** |=V checks relation is empty.
 |=V DUPLICATE : call-1 | meet call-2 | keep /name1 <> /name2
-  --fore /student-id /name1
+  --forward /student-id /name1
 

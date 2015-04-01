@@ -144,7 +144,7 @@ call : source IS-CALLED /student-id /name
 enl  : source IS-ENROLLED-ON /student-id /course-id
 
 **  Figure 4
-|== JOIN : call | meet enl  --fore /student-id
+|== JOIN : call | meet enl  --forward /student-id
 
 **  Figure 5
 |== ANTIJOIN : call | none ( meet enl )
@@ -222,7 +222,7 @@ enl  : source IS-ENROLLED-ON /student-id /course-id
 
 **  Figure 8
 |== EXTENSION : call | add /init ( sub-index /name 0 1 )
-  --fore /student-id /name
+  --forward /student-id /name
 
 **  Figure 9
 |== SUMMARIZATION
@@ -231,7 +231,7 @@ enl  : source IS-ENROLLED-ON /student-id /course-id
   | group /g enl
   | add /courses ( length /g/course-id )
   | cut /g
-  --fore /student-id
+  --forward /student-id
 
 **  Figure 10
 |== RENAME : call | rename /name1 /name
@@ -310,7 +310,7 @@ call-2 : call | rename /name2 /name
 
 ** |=V checks relation is empty.
 |=V DUPLICATE : call-1 | meet call-2 | keep /name1 <> /name2
-  --fore /student-id /name1
+  --forward /student-id /name1
 
 ```
 
@@ -370,7 +370,7 @@ call-2 : call | rename /name2 /name
 
 ** |=V checks relation is empty.
 |=V DUPLICATE : call-1 | meet call-2 | keep /name1 <> /name2
-  --fore /student-id /name1
+  --forward /student-id /name1
 
 ```
 
@@ -417,7 +417,7 @@ call : source IS-CALLED /student-id /name
 
 **  Figure 11 (simplified)
 |=V DUPLICATE : call | duplicate /student-id
-  --fore /student-id /name
+  --forward /student-id /name
 
 ```
 
@@ -473,7 +473,7 @@ call : source IS-CALLED /student-id /name
 
 **  Figure 11 (simplified)
 |=V DUPLICATE : call | duplicate /student-id
-  --fore /student-id /name
+  --forward /student-id /name
 
 ```
 

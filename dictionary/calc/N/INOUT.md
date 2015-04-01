@@ -75,7 +75,7 @@ Command `../../dict.sh natural-join.k` produces:
   | source S /sno /city
   | add /criteria ( /city = 'London )
   | add /negation ( not /criteria )
-  --fore /sno /city
+  --forward /sno /city
 ```
 
 Command `../../dict.sh negation.k` produces:
