@@ -34,6 +34,9 @@ Command `../../dict.sh delete.k` produces:
 **    ../../DATA.k
 **    delete.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-X S  /sno 'S5  /city 'Athens
 

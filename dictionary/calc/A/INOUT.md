@@ -37,6 +37,9 @@ Command `../../dict.sh associative.k` produces:
 **    ../../DATA.k
 **    associative.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- LEFT  /pname 'Nut  /sname 'Smith  /sno 'S1  /pno 'P1  /qty 300
 |-- LEFT  /pname 'Bolt  /sname 'Smith  /sno 'S1  /pno 'P2  /qty 200

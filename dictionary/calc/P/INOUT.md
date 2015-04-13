@@ -39,6 +39,9 @@ Command `../../dict.sh projection.k` produces:
 **    ../../DATA.k
 **    projection.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- SP  /status 20  /city 'London
 |-- SP  /status 10  /city 'Paris

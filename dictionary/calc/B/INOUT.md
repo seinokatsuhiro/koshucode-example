@@ -39,6 +39,9 @@ Command `../../dict.sh base-relation.k` produces:
 **    ../../DATA.k
 **    base-relation.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- S  /sno 'S1  /sname 'Smith  /status 20  /city 'London
 |-- S  /sno 'S2  /sname 'Jones  /status 10  /city 'Paris

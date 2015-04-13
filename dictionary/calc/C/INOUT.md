@@ -40,6 +40,9 @@ Command `../../dict.sh cardinality.k` produces:
 **    ../../DATA.k
 **    cardinality.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- CS  /card 5
 
@@ -85,6 +88,9 @@ Command `../../dict.sh cartesian-product.k` produces:
 **  INPUT
 **    ../../DATA.k
 **    cartesian-product.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- S  /sno 'S1
@@ -175,6 +181,9 @@ Command `../../dict.sh commutative.k` produces:
 **  INPUT
 **    ../../DATA.k
 **    commutative.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- S-SP  /pno 'P6  /qty 100  /sno 'S1  /sname 'Smith  /status 20  /city 'London

@@ -37,6 +37,9 @@ Command `../../dict.sh quota-query.k` produces:
 **    ../../DATA.k
 **    quota-query.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /pno 'P1  /pname 'Nut  /color 'Red  /weight 12  /city 'London
 |-- P  /pno 'P5  /pname 'Cam  /color 'Blue  /weight 12  /city 'Paris

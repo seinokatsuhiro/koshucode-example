@@ -77,6 +77,9 @@ Command `../../dict.sh literal.k` produces:
 **    ../../DATA.k
 **    literal.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- INTEGER  /lit 4
 |-- INTEGER  /lit -5
@@ -161,6 +164,9 @@ Command `../../dict.sh lossy-decomposition.k` produces:
 **  INPUT
 **    ../../DATA.k
 **    lossy-decomposition.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- S3  /status 20  /city 'London  /sno 'S1  /sname 'Smith

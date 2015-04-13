@@ -95,6 +95,9 @@ Command `koshu DATA.k projection.k` produces:
 **    DATA.k
 **    projection.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- PICK  /student-id 'S1  /name 'Anne
 |-- PICK  /student-id 'S2  /name 'Boris
@@ -168,6 +171,9 @@ Command `koshu DATA.k composition.k` produces:
 **  INPUT
 **    DATA.k
 **    composition.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- JOIN  /student-id 'S1  /course-id 'C2  /name 'Anne
@@ -246,6 +252,9 @@ Command `koshu DATA.k additional.k` produces:
 **    DATA.k
 **    additional.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- RESTRICTION  /student-id 'S2  /name 'Boris
 |-- RESTRICTION  /student-id 'S5  /name 'Boris
@@ -323,6 +332,9 @@ Command `koshu DATA.k duplicate-1.k` produces:
 **    DATA.k
 **    duplicate-1.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 **
 **  SUMMARY
@@ -384,6 +396,9 @@ Command `koshu DATA.k VIOLATE.k duplicate-1.k` exits with 1 and produces:
 **    VIOLATE.k
 **    duplicate-1.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-V DUPLICATE  /student-id 'S1  /name1 'Anne  /name2 'Eva
 |-V DUPLICATE  /student-id 'S1  /name1 'Eva  /name2 'Anne
@@ -429,6 +444,9 @@ Command `koshu DATA.k duplicate-2.k` produces:
 **  INPUT
 **    DATA.k
 **    duplicate-2.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 **
@@ -487,6 +505,9 @@ Command `koshu DATA.k VIOLATE.k duplicate-2.k` exits with 1 and produces:
 **    VIOLATE.k
 **    duplicate-2.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-V DUPLICATE  /student-id 'S1  /name 'Eva
 |-V DUPLICATE  /student-id 'S1  /name 'Anne
@@ -533,6 +554,9 @@ Command `koshu DATA.k exclusion.k` produces:
 **  INPUT
 **    DATA.k
 **    exclusion.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 **
@@ -591,6 +615,9 @@ Command `koshu DATA.k VIOLATE.k exclusion.k` exits with 1 and produces:
 **    DATA.k
 **    VIOLATE.k
 **    exclusion.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-V EXCLUDE  /student-id 'S6

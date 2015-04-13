@@ -40,6 +40,9 @@ Command `../../dict.sh semidifference.k` produces:
 **    ../../DATA.k
 **    semidifference.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- SSP  /sno 'S5  /sname 'Adams  /status 30  /city 'Athens
 
@@ -76,6 +79,9 @@ Command `../../dict.sh semijoin.k` produces:
 **  INPUT
 **    ../../DATA.k
 **    semijoin.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- SSP  /sno 'S1  /sname 'Smith  /status 20  /city 'London
@@ -120,6 +126,9 @@ Command `../../dict.sh sixth-normal-form.k` produces:
 **  INPUT
 **    ../../DATA.k
 **    sixth-normal-form.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- S-SNO  /sno 'S1

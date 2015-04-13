@@ -35,6 +35,9 @@ Command `../../dict.sh empty-heading.k` produces:
 **    ../../DATA.k
 **    empty-heading.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- EMPTY-HEADING
 
@@ -69,6 +72,9 @@ Command `../../dict.sh empty.k` produces:
 **  INPUT
 **    ../../DATA.k
 **    empty.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- EMPTY-SIZE  /size 5
@@ -109,6 +115,9 @@ Command `../../dict.sh extension.k` produces:
 **  INPUT
 **    ../../DATA.k
 **    extension.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- P  /gmwt 5 448  /pno 'P1  /pname 'Nut  /color 'Red  /weight 12  /city 'London

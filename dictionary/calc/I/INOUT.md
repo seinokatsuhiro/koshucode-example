@@ -38,6 +38,9 @@ Command `../../dict.sh identity-projection.k` produces:
 **    ../../DATA.k
 **    identity-projection.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- SP2  /sno 'S1  /pno 'P1  /qty 300
 |-- SP2  /sno 'S1  /pno 'P2  /qty 200
@@ -85,6 +88,9 @@ Command `../../dict.sh identity-restriction.k` produces:
 **  INPUT
 **    ../../DATA.k
 **    identity-restriction.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- S2  /sno 'S1  /sname 'Smith  /status 20  /city 'London
@@ -135,6 +141,9 @@ Command `../../dict.sh intersection.k` produces:
 **  INPUT
 **    ../../DATA.k
 **    intersection.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- S  /city 'London

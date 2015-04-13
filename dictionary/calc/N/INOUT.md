@@ -39,6 +39,9 @@ Command `../../dict.sh natural-join.k` produces:
 **    ../../DATA.k
 **    natural-join.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- SSP  /pno 'P6  /qty 100  /sno 'S1  /sname 'Smith  /status 20  /city 'London
 |-- SSP  /pno 'P5  /qty 100  /sno 'S1  /sname 'Smith  /status 20  /city 'London
@@ -86,6 +89,9 @@ Command `../../dict.sh negation.k` produces:
 **  INPUT
 **    ../../DATA.k
 **    negation.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- S  /sno 'S1  /city 'London  /negation <0>  /criteria <1>

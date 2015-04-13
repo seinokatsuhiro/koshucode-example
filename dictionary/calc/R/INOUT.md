@@ -49,6 +49,9 @@ Command `../../dict.sh relation-valued-attribute.k` produces:
 **    ../../DATA.k
 **    relation-valued-attribute.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- A  /size 3  /r {| /a : /b | 'A1 : 10 | 'A2 : 20 | 'A3 : 30 |}
 |-- A  /size 2  /r {| /a : /b | 'A4 : 10 | 'A5 : 20 |}
@@ -106,6 +109,9 @@ Command `../../dict.sh renaming.k` produces:
 **    ../../DATA.k
 **    renaming.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P2  /pno 'P1  /pname 'Nut  /col 'Red  /wt 12  /city 'London
 |-- P2  /pno 'P2  /pname 'Bolt  /col 'Green  /wt 17  /city 'Paris
@@ -155,6 +161,9 @@ Command `../../dict.sh repeating-group.k` produces:
 **    ../../DATA.k
 **    repeating-group.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /pname 'Nut  /qty-list [ 300 : 300 ]  /qty-total 600  /pno 'P1
 |-- P  /pname 'Bolt  /qty-list [ 200 : 200 : 400 : 200 ]  /qty-total 1 000  /pno 'P2
@@ -196,6 +205,9 @@ Command `../../dict.sh restriction.k` produces:
 **  INPUT
 **    ../../DATA.k
 **    restriction.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- P2  /pno 'P2  /pname 'Bolt  /color 'Green  /weight 17  /city 'Paris

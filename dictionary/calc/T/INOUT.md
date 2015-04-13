@@ -41,6 +41,9 @@ Command `../../dict.sh table-dee.k` produces:
 **    ../../DATA.k
 **    table-dee.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- DEE
 
@@ -93,6 +96,9 @@ Command `../../dict.sh table-dum.k` produces:
 **    ../../DATA.k
 **    table-dum.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 *** no judges
 
@@ -136,6 +142,9 @@ Command `../../dict.sh theta-join.k` produces:
 **  INPUT
 **    ../../DATA.k
 **    theta-join.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- S  /sc 'London

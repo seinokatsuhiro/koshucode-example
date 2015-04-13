@@ -60,6 +60,9 @@ Command `../../dict.sh with.k` produces:
 **    ../../DATA.k
 **    with.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- SUPPLY-SAME-PARTS  /sy 'S1  /sx 'S1
 |-- SUPPLY-SAME-PARTS  /sy 'S2  /sx 'S2

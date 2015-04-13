@@ -45,6 +45,9 @@ Command `../../dict.sh union.k` produces:
 **    ../../DATA.k
 **    union.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- CITY1  /city 'London
 |-- CITY1  /city 'Paris
