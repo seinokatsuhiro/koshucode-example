@@ -26,8 +26,10 @@ s    : source S  /sno /sname /status /city
 sp   : source SP /sno /pno /qty
 
 ssp  : s | none ( meet sp )
+ssp2 : s | none-meet sp
 
-|== SSP : ssp
+|== SSP  : ssp
+|== SSP2 : ssp2
 
 ```
 
@@ -48,10 +50,15 @@ Command `../../dict.sh semidifference.k` produces:
 
 *** 1 judge 
 
+|-- SSP2  /sno 'S5  /sname 'Adams  /status 30  /city 'Athens
+
+*** 1 judge 
+
 **
 **  SUMMARY
 **       1 judge  on SSP
-**       1 judge  in total
+**       1 judge  on SSP2
+**       2 judges in total
 **
 ```
 
@@ -66,8 +73,10 @@ s    : source S  /sno /sname /status /city
 sp   : source SP /sno /pno /qty
 
 ssp  : s | some ( meet sp )
+ssp2 : s | some-meet sp
 
-|== SSP : ssp
+|== SSP  : ssp
+|== SSP2 : ssp2
 
 ```
 
@@ -91,10 +100,18 @@ Command `../../dict.sh semijoin.k` produces:
 
 *** 4 judges
 
+|-- SSP2  /sno 'S1  /sname 'Smith  /status 20  /city 'London
+|-- SSP2  /sno 'S2  /sname 'Jones  /status 10  /city 'Paris
+|-- SSP2  /sno 'S3  /sname 'Blake  /status 30  /city 'Paris
+|-- SSP2  /sno 'S4  /sname 'Clark  /status 20  /city 'London
+
+*** 4 judges
+
 **
 **  SUMMARY
 **       4 judges on SSP
-**       4 judges in total
+**       4 judges on SSP2
+**       8 judges in total
 **
 ```
 
