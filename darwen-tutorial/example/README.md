@@ -338,6 +338,7 @@ Command `koshu DATA.k duplicate-1.k` produces:
 
 **
 **  SUMMARY
+**      no judges on DUPLICATE
 **      no judges in total
 **
 ```
@@ -451,6 +452,7 @@ Command `koshu DATA.k duplicate-2.k` produces:
 
 **
 **  SUMMARY
+**      no judges on DUPLICATE
 **      no judges in total
 **
 ```
@@ -561,6 +563,7 @@ Command `koshu DATA.k exclusion.k` produces:
 
 **
 **  SUMMARY
+**      no judges on EXCLUDE
 **      no judges in total
 **
 ```

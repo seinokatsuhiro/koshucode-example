@@ -110,7 +110,9 @@ Command `../../dict.sh table-dum.k` produces:
 
 **
 **  SUMMARY
+**      no judges on DUM
 **       1 judge  on SJ
+**      no judges on SM
 **       1 judge  in total
 **
 ```
