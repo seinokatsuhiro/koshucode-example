@@ -23,15 +23,15 @@ koshu $dict_dir/DATA.k $*
 ```
 ** -*- koshu -*-
 
-|-- A  /r {| /a  : /b
-           | 'A1 : 10
-           | 'A2 : 20
-           | 'A3 : 30
+|-- A  /r {| /a /b
+           [ 'A1 | 10 ]
+           [ 'A2 | 20 ]
+           [ 'A3 | 30 ]
            |}
 
-|-- A  /r {| /a  : /b
-           | 'A4 : 10
-           | 'A5 : 20
+|-- A  /r {| /a /b
+           [ 'A4 | 10 ]
+           [ 'A5 | 20 ]
            |}
 
 |== A
@@ -53,8 +53,8 @@ Command `../../dict.sh relation-valued-attribute.k` produces:
 **    <stdout>
 **
 
-|-- A  /size 3  /r {| /a : /b | 'A1 : 10 | 'A2 : 20 | 'A3 : 30 |}
-|-- A  /size 2  /r {| /a : /b | 'A4 : 10 | 'A5 : 20 |}
+|-- A  /size 3  /r {| /a /b [ 'A1 | 10 ] [ 'A2 | 20 ] [ 'A3 | 30 ] |}
+|-- A  /size 2  /r {| /a /b [ 'A4 | 10 ] [ 'A5 | 20 ] |}
 
 *** 2 judges
 
@@ -165,11 +165,11 @@ Command `../../dict.sh repeating-group.k` produces:
 **    <stdout>
 **
 
-|-- P  /pname 'Nut  /qty-list [ 300 : 300 ]  /qty-total 600  /pno 'P1
-|-- P  /pname 'Bolt  /qty-list [ 200 : 200 : 400 : 200 ]  /qty-total 1 000  /pno 'P2
+|-- P  /pname 'Nut  /qty-list [ 300 | 300 ]  /qty-total 600  /pno 'P1
+|-- P  /pname 'Bolt  /qty-list [ 200 | 200 | 400 | 200 ]  /qty-total 1 000  /pno 'P2
 |-- P  /pname 'Screw  /qty-list [ 400 ]  /qty-total 400  /pno 'P3
-|-- P  /pname 'Screw  /qty-list [ 300 : 200 ]  /qty-total 500  /pno 'P4
-|-- P  /pname 'Cam  /qty-list [ 400 : 100 ]  /qty-total 500  /pno 'P5
+|-- P  /pname 'Screw  /qty-list [ 300 | 200 ]  /qty-total 500  /pno 'P4
+|-- P  /pname 'Cam  /qty-list [ 400 | 100 ]  /qty-total 500  /pno 'P5
 
 |-- P  /pname 'Cog  /qty-list [ 100 ]  /qty-total 100  /pno 'P6
 
