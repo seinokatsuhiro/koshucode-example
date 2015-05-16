@@ -38,8 +38,8 @@ spy  : sp  | rename /sy /sno
 spxy : txy | some same-parts
 
 same-parts
-     : group /spx spx
-     | group /spy spy
+     : group spx -to /spx
+     | group spy -to /spy
      | for /spx ( pick /pno )
      | for /spy ( pick /pno )
      | keep /spx = /spy

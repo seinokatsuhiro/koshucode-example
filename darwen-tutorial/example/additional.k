@@ -23,7 +23,7 @@ enl  : source IS-ENROLLED-ON /student-id /course-id
 |== SUMMARIZATION
   : call
   | pick /student-id
-  | group /g enl
+  | group enl -to /g
   | add /courses ( length /g/course-id )
   | cut /g
   --forward /student-id
