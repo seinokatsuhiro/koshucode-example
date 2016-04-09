@@ -75,14 +75,14 @@ Command `../../dict.sh with.k` produces:
 
 *** 7 judges
 
-|-- PARTS-CONTENTS  /sx 'S1  /sy 'S1  /spy {| /pno [ 'P6 ] [ 'P5 ] [ 'P4 ] [ 'P3 ] [ 'P2 ] [ 'P1 ] |}  /spx {| /pno [ 'P6 ] [ 'P5 ] [ 'P4 ] [ 'P3 ] [ 'P2 ] [ 'P1 ] |}
-|-- PARTS-CONTENTS  /sx 'S2  /sy 'S2  /spy {| /pno [ 'P2 ] [ 'P1 ] |}  /spx {| /pno [ 'P2 ] [ 'P1 ] |}
-|-- PARTS-CONTENTS  /sx 'S2  /sy 'S3  /spy {| /pno [ 'P1 ] [ 'P2 ] |}  /spx {| /pno [ 'P2 ] [ 'P1 ] |}
-|-- PARTS-CONTENTS  /sx 'S3  /sy 'S2  /spy {| /pno [ 'P2 ] [ 'P1 ] |}  /spx {| /pno [ 'P1 ] [ 'P2 ] |}
-|-- PARTS-CONTENTS  /sx 'S3  /sy 'S3  /spy {| /pno [ 'P1 ] [ 'P2 ] |}  /spx {| /pno [ 'P1 ] [ 'P2 ] |}
+|-- PARTS-CONTENTS  /sx 'S1  /sy 'S1  /spy {= /pno [ 'P6 ] [ 'P5 ] [ 'P4 ] [ 'P3 ] [ 'P2 ] [ 'P1 ] =}  /spx {= /pno [ 'P6 ] [ 'P5 ] [ 'P4 ] [ 'P3 ] [ 'P2 ] [ 'P1 ] =}
+|-- PARTS-CONTENTS  /sx 'S2  /sy 'S2  /spy {= /pno [ 'P2 ] [ 'P1 ] =}  /spx {= /pno [ 'P2 ] [ 'P1 ] =}
+|-- PARTS-CONTENTS  /sx 'S2  /sy 'S3  /spy {= /pno [ 'P1 ] [ 'P2 ] =}  /spx {= /pno [ 'P2 ] [ 'P1 ] =}
+|-- PARTS-CONTENTS  /sx 'S3  /sy 'S2  /spy {= /pno [ 'P2 ] [ 'P1 ] =}  /spx {= /pno [ 'P1 ] [ 'P2 ] =}
+|-- PARTS-CONTENTS  /sx 'S3  /sy 'S3  /spy {= /pno [ 'P1 ] [ 'P2 ] =}  /spx {= /pno [ 'P1 ] [ 'P2 ] =}
 
-|-- PARTS-CONTENTS  /sx 'S4  /sy 'S4  /spy {| /pno [ 'P5 ] [ 'P4 ] [ 'P2 ] |}  /spx {| /pno [ 'P5 ] [ 'P4 ] [ 'P2 ] |}
-|-- PARTS-CONTENTS  /sx 'S5  /sy 'S5  /spy {| /pno |}  /spx {| /pno |}
+|-- PARTS-CONTENTS  /sx 'S4  /sy 'S4  /spy {= /pno [ 'P5 ] [ 'P4 ] [ 'P2 ] =}  /spx {= /pno [ 'P5 ] [ 'P4 ] [ 'P2 ] =}
+|-- PARTS-CONTENTS  /sx 'S5  /sy 'S5  /spy {= /pno =}  /spx {= /pno =}
 
 *** 7 judges
 

@@ -25,17 +25,17 @@
 |-- TERMSET   /lit << /sno 'S1 >>
 |-- TERMSET   /lit << >>
 
-|-- RELATION  /lit {| /sno /pno /qty
+|-- RELATION  /lit {= /sno /pno /qty
                     [ 'S1  | 'P1  | 300 ]
-                    [ 'S1  | 'P2  | 200 ] |}
-|-- RELATION  /lit {| /sno /pno /qty
-                    [ 'S1  | 'P1  | 300 ] |}
-|-- RELATION  /lit {| /sno /pno /qty |} ** empty relation
-|-- RELATION  /lit {| /sno /pno /qty [ () | () | () ] |} ** singleton relation
-|-- RELATION  /lit {| /sno [ () ] |}
-|-- RELATION  /lit {| |}         ** reldum
-|-- RELATION  /lit {| [] |}      ** reldee
-|-- RELATION  /lit {| [] [] |}   ** reldee
+                    [ 'S1  | 'P2  | 200 ] =}
+|-- RELATION  /lit {= /sno /pno /qty
+                    [ 'S1  | 'P1  | 300 ] =}
+|-- RELATION  /lit {= /sno /pno /qty =} ** empty relation
+|-- RELATION  /lit {= /sno /pno /qty [ () | () | () ] =} ** singleton relation
+|-- RELATION  /lit {= /sno [ () ] =}
+|-- RELATION  /lit {= =}         ** reldum
+|-- RELATION  /lit {= [] =}      ** reldee
+|-- RELATION  /lit {= [] [] =}   ** reldee
 
 |== INTEGER  : source INTEGER  /lit
 |== CHAR     : source CHAR     /lit

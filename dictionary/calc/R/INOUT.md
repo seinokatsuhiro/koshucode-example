@@ -23,16 +23,16 @@ koshu $dict_dir/DATA.k $*
 ```
 ** -*- koshu -*-
 
-|-- A  /r {| /a /b
+|-- A  /r {= /a /b
            [ 'A1 | 10 ]
            [ 'A2 | 20 ]
            [ 'A3 | 30 ]
-           |}
+           =}
 
-|-- A  /r {| /a /b
+|-- A  /r {= /a /b
            [ 'A4 | 10 ]
            [ 'A5 | 20 ]
-           |}
+           =}
 
 |== A
   | source A /r
@@ -53,8 +53,8 @@ Command `../../dict.sh relation-valued-attribute.k` produces:
 **    <stdout>
 **
 
-|-- A  /size 3  /r {| /a /b [ 'A1 | 10 ] [ 'A2 | 20 ] [ 'A3 | 30 ] |}
-|-- A  /size 2  /r {| /a /b [ 'A4 | 10 ] [ 'A5 | 20 ] |}
+|-- A  /size 3  /r {= /a /b [ 'A1 | 10 ] [ 'A2 | 20 ] [ 'A3 | 30 ] =}
+|-- A  /size 2  /r {= /a /b [ 'A4 | 10 ] [ 'A5 | 20 ] =}
 
 *** 2 judges
 
