@@ -13,10 +13,10 @@ call : source IS-CALLED /student-id /name
 enl  : source IS-ENROLLED-ON /student-id /course-id
 
 **  Figure 7
-|== RESTRICTION : call | keep sub-index /name 0 1 = "B"
+|== RESTRICTION : call | keep take 1 /name = "B"
 
 **  Figure 8
-|== EXTENSION : call | add /init ( sub-index /name 0 1 )
+|== EXTENSION : call | add /init ( take 1 /name )
   --forward /student-id /name
 
 **  Figure 9
