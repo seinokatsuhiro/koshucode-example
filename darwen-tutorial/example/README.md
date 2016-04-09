@@ -99,10 +99,10 @@ Command `koshu DATA.k projection.k` produces:
 **    <stdout>
 **
 
-|-- PICK  /student-id 'S1  /name 'Anne
-|-- PICK  /student-id 'S2  /name 'Boris
-|-- PICK  /student-id 'S3  /name 'Cindy
-|-- PICK  /student-id 'S4  /name 'Devinder
+|-- PICK  /student-id 'S1  /name "Anne"
+|-- PICK  /student-id 'S2  /name "Boris"
+|-- PICK  /student-id 'S3  /name "Cindy"
+|-- PICK  /student-id 'S4  /name "Devinder"
 
 *** 4 judges
 
@@ -176,15 +176,15 @@ Command `koshu DATA.k composition.k` produces:
 **    <stdout>
 **
 
-|-- JOIN  /student-id 'S1  /course-id 'C2  /name 'Anne
-|-- JOIN  /student-id 'S1  /course-id 'C1  /name 'Anne
-|-- JOIN  /student-id 'S2  /course-id 'C1  /name 'Boris
-|-- JOIN  /student-id 'S3  /course-id 'C3  /name 'Cindy
-|-- JOIN  /student-id 'S4  /course-id 'C1  /name 'Devinder
+|-- JOIN  /student-id 'S1  /course-id 'C2  /name "Anne"
+|-- JOIN  /student-id 'S1  /course-id 'C1  /name "Anne"
+|-- JOIN  /student-id 'S2  /course-id 'C1  /name "Boris"
+|-- JOIN  /student-id 'S3  /course-id 'C3  /name "Cindy"
+|-- JOIN  /student-id 'S4  /course-id 'C1  /name "Devinder"
 
 *** 5 judges
 
-|-- ANTIJOIN  /student-id 'S5  /name 'Boris
+|-- ANTIJOIN  /student-id 'S5  /name "Boris"
 
 *** 1 judge 
 
@@ -224,10 +224,10 @@ call : source IS-CALLED /student-id /name
 enl  : source IS-ENROLLED-ON /student-id /course-id
 
 **  Figure 7
-|== RESTRICTION : call | keep sub-index /name 0 1 = "B"
+|== RESTRICTION : call | keep take 1 /name = "B"
 
 **  Figure 8
-|== EXTENSION : call | add /init ( sub-index /name 0 1 )
+|== EXTENSION : call | add /init ( take 1 /name )
   --forward /student-id /name
 
 **  Figure 9
@@ -256,16 +256,16 @@ Command `koshu DATA.k additional.k` produces:
 **    <stdout>
 **
 
-|-- RESTRICTION  /student-id 'S2  /name 'Boris
-|-- RESTRICTION  /student-id 'S5  /name 'Boris
+|-- RESTRICTION  /student-id 'S2  /name "Boris"
+|-- RESTRICTION  /student-id 'S5  /name "Boris"
 
 *** 2 judges
 
-|-- EXTENSION  /student-id 'S1  /name 'Anne  /init 'A
-|-- EXTENSION  /student-id 'S2  /name 'Boris  /init 'B
-|-- EXTENSION  /student-id 'S3  /name 'Cindy  /init 'C
-|-- EXTENSION  /student-id 'S4  /name 'Devinder  /init 'D
-|-- EXTENSION  /student-id 'S5  /name 'Boris  /init 'B
+|-- EXTENSION  /student-id 'S1  /name "Anne"  /init "A"
+|-- EXTENSION  /student-id 'S2  /name "Boris"  /init "B"
+|-- EXTENSION  /student-id 'S3  /name "Cindy"  /init "C"
+|-- EXTENSION  /student-id 'S4  /name "Devinder"  /init "D"
+|-- EXTENSION  /student-id 'S5  /name "Boris"  /init "B"
 
 *** 5 judges
 
@@ -277,11 +277,11 @@ Command `koshu DATA.k additional.k` produces:
 
 *** 5 judges
 
-|-- RENAME  /student-id 'S1  /name1 'Anne
-|-- RENAME  /student-id 'S2  /name1 'Boris
-|-- RENAME  /student-id 'S3  /name1 'Cindy
-|-- RENAME  /student-id 'S4  /name1 'Devinder
-|-- RENAME  /student-id 'S5  /name1 'Boris
+|-- RENAME  /student-id 'S1  /name1 "Anne"
+|-- RENAME  /student-id 'S2  /name1 "Boris"
+|-- RENAME  /student-id 'S3  /name1 "Cindy"
+|-- RENAME  /student-id 'S4  /name1 "Devinder"
+|-- RENAME  /student-id 'S5  /name1 "Boris"
 
 *** 5 judges
 
@@ -401,8 +401,8 @@ Command `koshu DATA.k VIOLATE.k duplicate-1.k` exits with 1 and produces:
 **    <stdout>
 **
 
-|-V DUPLICATE  /student-id 'S1  /name1 'Anne  /name2 'Eva
-|-V DUPLICATE  /student-id 'S1  /name1 'Eva  /name2 'Anne
+|-V DUPLICATE  /student-id 'S1  /name1 "Anne"  /name2 "Eva"
+|-V DUPLICATE  /student-id 'S1  /name1 "Eva"  /name2 "Anne"
 
 *** 2 judges
 
@@ -511,8 +511,8 @@ Command `koshu DATA.k VIOLATE.k duplicate-2.k` exits with 1 and produces:
 **    <stdout>
 **
 
-|-V DUPLICATE  /student-id 'S1  /name 'Eva
-|-V DUPLICATE  /student-id 'S1  /name 'Anne
+|-V DUPLICATE  /student-id 'S1  /name "Eva"
+|-V DUPLICATE  /student-id 'S1  /name "Anne"
 
 *** 2 judges
 
